@@ -1,43 +1,30 @@
 body{
-    background:#f4f4f4;
-    text-align:center;
+    background-color:aquamarine;
 }
+
+
+
+
 
 h1{
-    background:blue;
-    color:white;
-    padding:15px;
+    color:blue;
+    text-align: center;
+    background-color: beige
 }
+
 
 .container{
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-    margin-top:30px;
-    align-items:center;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
 .card{
-    background:white;
-    padding:15px;
-    border-radius:10px;
-    width:250px;
-}
-
-.card img{
-    width:100%;
-}
-
-button{
-    background:#2874f0;
-    color:white;
-    border:none;
-    padding:10px 15px;
-    border-radius:5px;
-}
-
-button:hover{
-    background:green;
+            background-color:rgb(235, 147, 199);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
 }
