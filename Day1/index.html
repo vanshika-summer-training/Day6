@@ -3,71 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .profile-img{
-            width:200px;
-            height: 210px;
-            border-radius:50%;
-            object-fit:cover;
-            margin:15px 0;
-
-        }
-        body{
-            background-color:grey;
-        }
-        .container{
-            background-color: white;
-            width:75%;
-            margin:40px auto;
-            max-width:fit-content;
-            padding:30px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        h1{
-            font-size: 22px;
-            margin: 10px 0 30px;
-        }
-        p{
-            color:grey;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
-        .btn{
-            padding:10px 15px;
-            margin:5px;
-            border:none;
-            border-radius: 5px;
-            background-color: #202040;
-            cursor:pointer;
-            font-size: 14px;
-        }
-        a{
-            color:white;
-            text-decoration:none;
-        }
-        .btn:hover{
-            background-color: #404070;
-        }
-    </style>
+    <title>navbar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>MY PROFILE</h1>
-        <img src="images.jpg" alt="image" class="profile-img"/>
-        <h1>VANSHIKA</h1>
-        <p>College Student</p>
-        <p>I am learning a skill</p>
-        <button class="btn">
-            <a href="https://www.instagram.com/urs_vanshika2512/">Follow</a>
-        </button>
-        <button class="btn">
-            <a href="https://www.linkedin.com/jobs/">Linked In</a>
-        </button>
-        <p>
-            Contact:+91-8222876066
-        </p>
-    </div>
+<nav class="navbar">
+    <div class="logo">
+<img src="logo.jpeg" alt="logo">
+</div>
+  <div class="hamburger">☰</div>
+    <ul class="nav-links">
+    <li>Home</li>
+    <li>Services</li>
+    <li>Products</li>
+    <li>About Us</li>
+</ul>
+</nav>
+<script>
+const hamburger=document.querySelector(".hamburger");
+const navLinks=document.querySelector(".nav-links");
+hamburger.addEventListener("click",()=>{
+     navLinks.classList.toggle("active");
+        })
+</script>
+
 </body>
 </html>
